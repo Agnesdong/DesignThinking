@@ -1,0 +1,155 @@
+.Header {
+    display: flex;
+    height: 100%;
+  }
+  
+  .left-part {
+    flex: 5; 
+    background-color: #fff;
+  }
+
+  .tab-bar {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+  }
+
+  .tab-title {
+    margin-right: 20px; 
+    font-weight: 700;
+    font-size: 20px;
+    flex: 1;
+   
+  }
+
+  .vertical-line {
+    border-left: 1px solid #000;
+    height: 100%; /* Adjust the height as needed */
+  }
+
+  
+  .icons {
+    flex:3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px; 
+    margin-right: 15px;
+    transform: scale(1.2);
+  }
+
+  .icon-item svg {
+    font-size: 24px; 
+    color: #006699;
+  }
+  
+  .icon-text {
+    margin-top: 5px; 
+    font-size: 10px;
+  }
+
+  .small-vertical-line {
+    border-left: 3px solid #D9D9D9;
+    height: 70%; /* Adjust the height as needed */
+  }
+
+  .close {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+
+  .close-icon{
+    padding-right: 15px;
+  }
+
+  .close-icon svg {
+    font-size: 24px; 
+  }
+
+  .separator-line {
+    border-top: 1px solid #000;
+  }
+  
+  .scrollable-content {
+    overflow-y: scroll; /* 设置为scroll以实现滚动效果 */
+    flex: 1; /* 占据剩余可用空间 */
+    padding-bottom: 20px; /* 添加一些底部内边距，以便为滚动留出空间 */
+    height: 2000px; /* 设置一个较大的高度，确保可以滚动 */
+  }
+
+  .Axis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .DirectionText{
+    font-size: 25px;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  .DirectionTextRisk{
+    font-size: 25px;
+    font-weight: 600;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .CoordinateAxisContainer {
+    /* Set the style for the coordinate axis container to center it within its parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .CoordinateAxis {
+    /* Set the style for the coordinate axis */
+    position: relative;
+    width: 600px;
+    height: 500px;
+  }
+  
+  /* Draw the x-axis */
+  .CoordinateAxis::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  
+  /* Draw the y-axis */
+  .CoordinateAxis::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+  }
+  
+  
+  
+  .right-part {
+    flex: 1;
+    background-color: #3E3B3B;
+    height: 100vh; 
+
+  }
