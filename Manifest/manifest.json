@@ -1,0 +1,66 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+    "version": "1.0.1",
+    "manifestVersion": "1.15",
+    "id": "a2e7f725-35f2-4b9d-87e1-f05fd3ff4aee",
+    "packageName": "com.microsoft.teams.livesharediceroller",
+    "name": {
+        "short": "DesignThinking",
+        "full": "DesignThinking"
+    },
+    "developer": {
+        "name": "Yuxin Dong",
+        "mpnId": "",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/PrivacyStatement",
+        "termsOfUseUrl": "https://www.example.com/TermsOfUse"
+    },
+    "description": {
+        "short": "Live Share version of DesignThinking",
+        "full": "DesignThinking that uses Live Share for sync'ing meeting"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://a533-31-205-125-247.ngrok-free.app?inTeams=true",
+            "canUpdateConfiguration": false,
+            "scopes": [
+                "groupchat"
+            ],
+            "context": [
+                "meetingSidePanel",
+                "meetingStage"
+            ]
+        }
+    ],
+    "validDomains": [
+        "*.ngrok.io"
+    ],
+    "authorization": {
+        "permissions": {
+            "orgWide": [],
+            "resourceSpecific": [
+                {
+                    "name": "MeetingStage.Write.Chat",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "ChannelMeetingStage.Write.Group",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "LiveShareSession.ReadWrite.Chat",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "LiveShareSession.ReadWrite.Group",
+                    "type": "Delegated"
+                }
+            ]
+        }
+    }
+}
